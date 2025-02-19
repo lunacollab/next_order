@@ -11,10 +11,10 @@ export default function Header({ onSearch }: HeaderProps) {
     onSearch(event.target.value)
   }
   return (
-    <header className="bg-[#FFC107] py-4">
+    <header className="bg-[#FFFFFF] py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-white">
+          <Link href="/" className="text-2xl font-bold text-black">
             Hôm Nay Ăn Gì?
           </Link>
           <div className="hidden md:flex items-center space-x-4">

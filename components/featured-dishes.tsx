@@ -72,7 +72,7 @@ export default function FeaturedDishes({ restaurants, searchTerm }: FeaturedDish
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Button
-                className="w-full bg-[#FF7A00] hover:bg-[#FF7A00]/90"
+                className="w-full bg-[#FF7A00] hover:bg-[#FF7A00]/90 text-white"
                 onClick={() => setSelectedRestaurant(restaurants.find((r) => r.id === dish.restaurantId) || null)}
               >
                 Đặt Món
