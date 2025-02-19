@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <div className="relative h-[500px] bg-[#FFFC94] overflow-hidden">
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 " />
       <div className="container mx-auto px-4 h-full flex items-center justify-between relative z-10">
         <div className="max-w-lg w-1/2">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
