@@ -1,35 +1,30 @@
-import type React from "react"
-import { Inter } from "next/font/google"
-import { Toaster } from "@/components/ui/toaster"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import "./globals.css"
+"use client"; // Layout là client component
 
-const inter = Inter({ subsets: ["latin"] })
+import  React from "react";
+import { Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import "./globals.css";
+import { useState } from "react";
 
-export const metadata = {
-  title: "Hôm Nay Ăn Gì?",
-  description: "Đặt bàn nhà hàng Việt Nam",
-    generator: 'v0.dev'
-}
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <html lang="vi">
       <body className={inter.className}>
-        <Header />
-        {children}
+         {children}
         <Footer />
         <Toaster />
       </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'
