@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 
-
 export default function Hero() {
   return (
     <div className="relative h-[500px] bg-[#FFB30E] overflow-hidden">
@@ -20,7 +19,7 @@ export default function Hero() {
             </Button>
             <Button
               variant="outline"
-              className="bg-white/10 text-white px-8 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors backdrop-blur-sm"
+              className="bg-white/10 text-black px-8 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors backdrop-blur-sm"
             >
               Tìm Hiểu Thêm
             </Button>
